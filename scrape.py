@@ -32,7 +32,8 @@ for article in soup.find_all('article'):
     print(datetime)       
  
 
-    url = article.find('div', class_='story-content').a['href']   
+    urlw = article.find('div', class_='story-content').a['href'] 
+    url = 'https://www.reuters.com' + urlw
     print(url)
 
     print()
